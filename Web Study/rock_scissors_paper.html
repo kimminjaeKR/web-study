@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    
+<head>
+    <title>rock&paper&scissors</title>
+    <meta charset="udf-8">
+</head>
+<h1>Rock&Paper&Scissors</h1>
+<li><a href="Gameland.html">Back Gameland</a></li>
+<py-script>
+    me = input('rock paper scissors!: ')
+    possible = ['rock', 'paper', 'scissors']
+    import random
+    enemy = random.choice(possible)
+    print('me: '+me+'')
+    print('enemy: '+enemy+'')
+    if me == enemy:
+        print('draw')
+    elif me == 'rock':
+        if enemy == 'scissors':
+            print('you win')
+        else:
+            print('you lose')
+    elif me == 'paper':
+        if enemy == 'rock':
+            print('you win')
+        else:
+            print('you lose')
+    elif me == 'scissors':
+        if enemy == 'paper':
+            print('you win')
+        else:
+            print('you lose')
+        
+</py-script>
+</html>
